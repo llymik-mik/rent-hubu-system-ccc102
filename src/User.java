@@ -12,4 +12,13 @@ public class User {
         this.contactNum = contactNum;
     }
 
+    public int getIdNumber() {
+        return idNumber;
+    }
+
+    public String getFullName() {
+        return fullName;
+    }
+
+
 }
