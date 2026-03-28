@@ -11,7 +11,6 @@ public class LogIn {
     public String getIdNumber() {
         return idNumber;
     }
-
     public String getPassword() {
         return pass;
     }
