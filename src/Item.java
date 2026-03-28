@@ -19,13 +19,24 @@ public class Item {
         return name;
     }
     public String getStatus() {
+
         return status;
     }
+
+    public String getCollege() {
+        return college;
+    }
+
     public void setStatus(String status) {
+
         this.status = status;
     }
     public User getOwner() {
         return owner;
+    }
+
+    public void setCollege(String college) {
+        this.college = college;
     }
 }
 
