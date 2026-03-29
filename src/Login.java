@@ -15,10 +15,14 @@ public class Login {
         this.contactNum = contactNum;
     }
 
-    public int getIdNumber()   { return idNumber; }
-    public String getFullName() { return fullName; }
-    public String getPassword() { return password; }
-    public int getContactNum()  { return contactNum; }
+    public int getIdNumber()   {
+        return idNumber; }
+    public String getFullName() {
+        return fullName; }
+    public String getPassword() {
+        return password; }
+    public int getContactNum()  {
+        return contactNum; }
 
 
     // ── Auth System ──────────────────────────────────────────────────────────
