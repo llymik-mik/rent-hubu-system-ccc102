@@ -105,6 +105,11 @@ public class LoginPage extends JFrame {
         JButton loginBtn = createAestheticButton("Log in");
         JButton signupBtn = createAestheticButton("Sign Up");
 
+        signupBtn.addActionListener(e -> {
+            new SignUpPage();
+            dispose();
+        });
+
         loginContainer.add(loginBtn);
         loginContainer.add(Box.createVerticalStrut(15));
         loginContainer.add(signupBtn);
