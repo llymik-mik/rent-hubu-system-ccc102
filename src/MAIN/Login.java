@@ -1,8 +1,10 @@
+package MAIN;
+
 import java.util.HashMap;
 import java.util.Scanner;
 
 public class Login {
-    // Our database now maps IDs to User objects
+    // Our database now maps IDs to MAIN.User objects
     private static final HashMap<Integer, User> users = new HashMap<>();
 
     public static void signup(int idNumber, String fullName, String password, int contactNum) {
@@ -10,7 +12,7 @@ public class Login {
             System.out.println("Signup failed: ID " + idNumber + " is already registered.");
             return;
         }
-        // We create a new User object and store it
+        // We create a new MAIN.User object and store it
         users.put(idNumber, new User(fullName, idNumber, password, contactNum));
         System.out.println("Signup successful! Welcome, " + fullName + ".");
     }
@@ -19,17 +21,17 @@ public class Login {
         User user = users.get(idNumber);
 
         if (user == null) {
-            System.out.println("Login failed: ID not found.");
+            System.out.println("MAIN.Login failed: ID not found.");
             return null;
         }
 
         // Comparing strings using .equals()
         if (!user.getPassword().equals(password)) {
-            System.out.println("Login failed: Incorrect password.");
+            System.out.println("MAIN.Login failed: Incorrect password.");
             return null;
         }
 
-        System.out.println("Login successful! Welcome back, " + user.getFullName() + ".");
+        System.out.println("MAIN.Login successful! Welcome back, " + user.getFullName() + ".");
         return user;
     }
 
@@ -57,7 +59,7 @@ public class Login {
 
                 User logged = login(id, pass);
                 if (logged != null) {
-                    System.out.println("--- User Profile ---");
+                    System.out.println("--- MAIN.User Profile ---");
                     System.out.println("Name    : " + logged.getFullName());
                     System.out.println("Contact : " + logged.getContactNum());
                 }

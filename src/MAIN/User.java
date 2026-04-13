@@ -1,10 +1,12 @@
+package MAIN;
+
 public class User {
         private String fullName;
         private int idNumber;
         private String password;
         private int contactNum;
 
-        // The Constructor now matches the class name "User"
+        // The Constructor now matches the class name "MAIN.User"
         public User(String fullName, int idNumber, String password, int contactNum) {
             this.fullName = fullName;
             this.idNumber = idNumber;

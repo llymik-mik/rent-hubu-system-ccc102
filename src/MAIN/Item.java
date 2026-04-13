@@ -1,10 +1,12 @@
+package MAIN;
+
 public class Item {
 
     private String name;
     private String details;
     private String college; // e.g., "CCS"
     private String status;  // "Available" or "Rented"
-    private User owner;     // Relationship: Item belongs to a User
+    private User owner;     // Relationship: MAIN.Item belongs to a MAIN.User
 
     public Item(String name, String details, String college, User owner) {
         this.name = name;
