@@ -111,7 +111,7 @@ public class LoginPage extends JFrame {
         });
 
         loginBtn.addActionListener(e -> {
-            new DashboardPage();
+            new DashboardPage("Student");
             dispose();
         });
 

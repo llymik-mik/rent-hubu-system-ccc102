@@ -122,6 +122,17 @@ public class SignUpPage extends JFrame {
         JButton signUpBtn = createAestheticButton("Sign Up");
         signUpContainer.add(signUpBtn);
 
+        signUpBtn.addActionListener(e -> {
+            String fullName = nameField.getText().trim();
+            if (fullName.isEmpty()) {
+                JOptionPane.showMessageDialog(this, "Please enter your full name.",
+                        "Missing Name", JOptionPane.WARNING_MESSAGE);
+                return;
+            }
+            new DashboardPage(fullName);
+            dispose();
+        });
+
         GridBagConstraints frameGbc = new GridBagConstraints();
         frameGbc.anchor = GridBagConstraints.CENTER;
         add(signUpContainer, frameGbc);
