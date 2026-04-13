@@ -110,6 +110,11 @@ public class LoginPage extends JFrame {
             dispose();
         });
 
+        loginBtn.addActionListener(e -> {
+            new DashboardPage();
+            dispose();
+        });
+
         loginContainer.add(loginBtn);
         loginContainer.add(Box.createVerticalStrut(15));
         loginContainer.add(signupBtn);
